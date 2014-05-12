@@ -1,8 +1,170 @@
-.hop-content {
-	background: url(images/bg1.jpg) no-repeat center center fixed;
+.hop-iconspace{
+	margin-right: 15px;
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+	background-color: transparent;
+	border-color: transparent;
+	color: #333333;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #EEEEEE;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+
+	border-color: #BBBBBB;
+	color: #333333;
+	text-shadow: 0 1px 0 #F3F3F3;
+	background: url(../images/bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 600px;
+}
+.userimage{
+	border-radius: 50%;
+	background-color: #f7f7f7;
+	width: 100px;
+	height: 100px;
+	margin: 0px auto 20px auto;
+}
+.landingpage{
+	margin-top: 40px;
+	width: 100%;
+}
+.landingpage h1{
+	color: #FFFFFF;
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+	font-family: Verdana Helvicta;
+	text-shadow: 0 0 10px #3C3C3C;
+	z-index: 100;
+}
+.search-content{
+	margin-left: 0;
+	margin-right: auto;
+	animation: 1.5s ease 0s normal none 1 fadein;
+	width: 100%;
+	position: fixed;
+	left: 30%;
+	margin-left: -100px;
+}
+.search-btn-margin{
+	margin-top: 0.7em;
+}
+
+
+/* MEDIA QUERIES START */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+	.landingpage h1{
+		font-size: 1.5em;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	/* Styles */
+	.landingpage h1{
+		font-size: 1.5em;
+	}
+	.landingpage{
+		width: 95%;
+	}
+	.search-content{
+		left: 30%;
+		margin-left: -70px;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	/* Styles */
+	.landingpage h1{
+		font-size: 1em;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	/* Styles */
+	.landingpage h1{
+		font-size: 1.5em;
+	}
+	.landingpage{
+		width: 95%;
+	}
+	.search-content{
+		left: 30%;
+		margin-left: -70px;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	/* Styles */
+	.landingpage h1{
+		font-size: 1.5em;
+	}
+	.landingpage{
+		width: 95%;
+	}
+	.search-content{
+		left: 30%;
+		margin-left: -70px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	/* Styles */
+	.landingpage{
+		width: 100%;
+		left: 25%;
+	}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	/* Styles */
+	.landingpage{
+		width: 100%;
+		left: 35%;
+	}
+	.landingpage h1{
+		color: #FFFFFF;
+		font-size: 2em;
+		font-weight: normal;
+		font-family: arial Verdana Helvicta;
+		text-shadow: 0 0 10px #3C3C3C;
+		z-index: 100;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	/* Styles */
 }
